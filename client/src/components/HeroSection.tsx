@@ -82,9 +82,9 @@ export function HeroSection() {
           {/* Right Column - Profile Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="dashed-border w-80 h-80 flex items-center justify-center">
+              <div className="w-80 h-80 flex items-center justify-center border-4 border-dashed border-cyber-green rounded-full">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
+                  src="/attached_assets/IMG_20221231_201355_Original_1753478199907.jpeg" 
                   alt={`${portfolioData.name} - Cybersecurity Analyst`}
                   className="w-72 h-72 rounded-full object-cover"
                 />
