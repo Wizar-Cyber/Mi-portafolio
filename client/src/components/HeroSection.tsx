@@ -6,7 +6,7 @@ export function HeroSection() {
   const { language, t } = useLanguage();
 
   return (
-    <section className="py-20">
+    <section className="py-20 pt-32">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column - Text Content */}
