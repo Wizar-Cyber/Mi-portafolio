@@ -23,7 +23,7 @@ export function Navigation({ currentSection, onSectionChange }: NavigationProps)
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-bold">
-            <span className="text-white">Reiber</span>
+            <span className="text-white">Reiber Lozano</span>
             <span className="cyber-green">.</span>
           </div>
           
