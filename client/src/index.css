@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(142, 100%, 53%);
+  --primary-foreground: hsl(240, 10%, 3.9%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+  
+  /* Custom cybersecurity theme colors */
+  --cyber-green: hsl(142, 100%, 53%);
+  --dark-bg: hsl(0, 0%, 10%);
+  --dark-secondary: hsl(0, 0%, 16%);
+  --dark-border: hsl(0, 0%, 20%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-[--dark-bg] text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .cyber-green {
+    color: var(--cyber-green);
+  }
+  
+  .bg-cyber-green {
+    background-color: var(--cyber-green);
+  }
+  
+  .border-cyber-green {
+    border-color: var(--cyber-green);
+  }
+  
+  .hover\:bg-cyber-green:hover {
+    background-color: var(--cyber-green);
+  }
+  
+  .hover\:border-cyber-green:hover {
+    border-color: var(--cyber-green);
+  }
+  
+  .bg-dark-bg {
+    background-color: var(--dark-bg);
+  }
+  
+  .bg-dark-secondary {
+    background-color: var(--dark-secondary);
+  }
+  
+  .border-dark-border {
+    border-color: var(--dark-border);
+  }
+  
+  .bg-dark-border {
+    background-color: var(--dark-border);
+  }
+  
+  .text-dark-bg {
+    color: var(--dark-bg);
+  }
+}
+
+@layer utilities {
+  .dashed-border {
+    border: 3px dashed var(--cyber-green);
+    border-radius: 50%;
+    animation: spin-slow 8s linear infinite;
+  }
+  
+  .nav-link {
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link.active {
+    background-color: var(--cyber-green);
+    color: var(--dark-bg);
+  }
+  
+  .nav-link:not(.active):hover {
+    background-color: var(--dark-secondary);
+    color: var(--cyber-green);
+  }
+  
+  .skill-icon {
+    transition: all 0.3s ease;
+  }
+  
+  .skill-icon:hover {
+    transform: translateY(-5px);
+    color: var(--cyber-green);
+  }
+  
+  .project-card {
+    transition: all 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--cyber-green);
+  }
+  
+  .timeline-item {
+    position: relative;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--cyber-green);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 255, 136, 0);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+.animate-pulse-green {
+  animation: pulse-green 2s ease-in-out infinite alternate;
+}
