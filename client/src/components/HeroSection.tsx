@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { portfolioData } from '@/data/portfolioData';
 import { Button } from '@/components/ui/button';
+import profileImage from '@assets/IMG_20221231_201355_Original_1753478199907.jpeg';
 
 export function HeroSection() {
   const { language, t } = useLanguage();
@@ -84,7 +85,7 @@ export function HeroSection() {
             <div className="relative">
               <div className="w-80 h-80 flex items-center justify-center border-4 border-dashed border-cyber-green rounded-full">
                 <img 
-                  src="/attached_assets/IMG_20221231_201355_Original_1753478199907.jpeg" 
+                  src={profileImage}
                   alt={`${portfolioData.name} - Cybersecurity Analyst`}
                   className="w-72 h-72 rounded-full object-cover"
                 />
