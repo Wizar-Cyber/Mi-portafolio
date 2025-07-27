@@ -91,7 +91,7 @@ This project is optimized for **Netlify** deployment:
 ### 📧 Contact
 
 - **Email:** [lozanoreiber1@gmail.com.com]
-- **LinkedIn:** [https://www.linkedin.com/in/reiber-lozano-0856a0235/]
+- **LinkedIn:** [www.linkedin.com/in/reiberlozano]
 - **Location:** Medellín, Colombia
 
 ---
