@@ -90,8 +90,8 @@ This project is optimized for **Netlify** deployment:
 
 ### 📧 Contact
 
-- **Email:** [tu-email@ejemplo.com]
-- **LinkedIn:** [tu-linkedin]
+- **Email:** [lozanoreiber1@gmail.com.com]
+- **LinkedIn:** [https://www.linkedin.com/in/reiber-lozano-0856a0235/]
 - **Location:** Medellín, Colombia
 
 ---
